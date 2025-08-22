@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import Directoy from "../../components/directory/directory.component";
 
 const Home = () => {
@@ -31,7 +33,10 @@ const Home = () => {
   ]
 
   return (
-    <Directoy categories={categories}/>
+    <div>
+      <Directoy categories={categories} />
+      <Outlet />
+    </div>
   );
 }
 
