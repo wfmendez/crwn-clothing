@@ -7,12 +7,12 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCuAwOD-NeJljoumWx5yeG8Px6DpQhZsVQ",
-  authDomain: "crwn-clothing-db-e0dc2.firebaseapp.com",
-  projectId: "crwn-clothing-db-e0dc2",
-  storageBucket: "crwn-clothing-db-e0dc2.firebasestorage.app",
-  messagingSenderId: "325257059679",
-  appId: "1:325257059679:web:a4086bc1baceed6323aaea"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_FIREBASE_APPID
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
